@@ -114,7 +114,7 @@ jenkinsJSModules.import('ace-editor:ace-editor-122')
                 // ACE Editor doesn't have this as a config option.
                 $wfEditor.wrap('<div class="jquery-ui-1"></div>');
                 $wfEditor.resizable({
-                    handles: "s", // Only allow vertical resize off the bottom/south border
+                    handles: "e, s", // Only allow vertical resize off the bottom/south and east/right borders
                     minHeight: 100,
                     resize: function () {
                         // Use requestAnimationFrame to throttle resizes to happen before frame render
